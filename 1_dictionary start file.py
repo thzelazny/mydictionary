@@ -1,8 +1,8 @@
 import random
 
-phonebook = {'Chris':'555−1111',
-             'Katie':'555−2222',
-             'Joanne':'555−3333'}
+phonebook = {'Chris':'555-1111',
+             'Katie':'555-2222',
+             'Joanne':'555-3333'}
 
 
 
@@ -134,13 +134,17 @@ print()
 print('*****  end section 6 ********')
 print()
 
-'''
+
 
 print()
 print('*****  start section 7 - using pop method ********')
 print()
 
+#a=phonebook.pop("Chris", "not found")
 
+#print(a)
+
+#print(phonebook)
 
 
 
@@ -155,9 +159,11 @@ print()
 print('*****  start section 8 - using popitem ********')
 print()
 
+#print(phonebook)
+#a=phonebook.popitem()
 
-
-
+#print(a)
+#print(phonebook)
 
 
 print()
@@ -170,16 +176,29 @@ print()
 print('*****  start section 9 - using random and converting to list ********')
 print()
 
+list_of_keys=list(phonebook)
+
+print(phonebook)
+
+rand_key=random.choice(list_of_keys)
+
+print(rand_key)
+
+random_value=phonebook[rand_key]
+
+print(random_value)
 
 
-
+#alternatively, the following is the same as the above, just more efficient
+random_value=phonebook[random.choice(list(phonebook))]
+print(random_value)
 
 print()
 print('*****  end section 9 ********')
 print()
 
 
-'''
+
 
 
 
