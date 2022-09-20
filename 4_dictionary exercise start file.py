@@ -54,12 +54,14 @@ def deal_cards(deck, number):
     # Initialize an accumulator for the hand value.
     handValue=0
     
-    
 
     # Make sure the number of cards to deal is not
     # greater than the number of cards in the deck.
-    if number>52:
-        number=52
+
+    
+    # greater than the number of cards in the deck (52).
+
+
     
     
 
