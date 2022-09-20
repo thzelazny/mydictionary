@@ -6,6 +6,9 @@ def main():
 
     # Get the number of cards to deal.
     num_cards = int(input('How many cards should I deal? '))
+    if num_cards>52:
+        num_cards=52
+
 
 
 
