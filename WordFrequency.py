@@ -12,8 +12,10 @@ for term in mylist:
     term=term.replace(".","")
     term=term.replace(",","")
     term=term.replace("\n","")
-    count=mylist.count(term)
-    mydict[term]=count
+    if term in mydict:
+        mydict[term]=mydict[term]+1
+    else:
+        mydict[term]=1
 
 print(mydict)
 
